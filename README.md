@@ -2,9 +2,8 @@
 Project SS2017 HTW Berlin IMI
 
 ## Requirements
-- NPM
-- Node
-- Git
+- [NPM & Node](https://nodejs.org/en/)
+- Gulp (`npm install gulp-cli -g`) 
 
 ## Installation
 - npm install
