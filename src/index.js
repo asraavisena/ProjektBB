@@ -1,7 +1,9 @@
 var express = require('express');
 var app = express();
 var pug = require("pug");
+var bodyParser = require('body-parser')
 
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + "/assets"));
 app.engine('pug', require('pug').__express);
 app.set('view engine', 'pug');
@@ -56,8 +58,18 @@ app.get("/findcompany", function(req, res) {
               input(type ='text')
               if (list=="Company Name")
 	res.render(__dirname+'/pages/FindCompany', {data:data});*/
-    var html = pug.renderFile('./pages/FindCompany.pug');
-    res.send(html);
+    // var html = pug.renderFile('./pages/FindCompany.pug');
+    // res.send(html);
+    res.render('FindCompany', {});
+
+});
+
+app.post('/search', function(req, res) {
+
+    var company_name = req.body.name;
+    var company_age = req.body.age;
+
+    res.redirect('http://www.google.com/search?q=' + company_name + '+' + company_age);
 });
 
 /*var html = pug.renderFile('./template/FindCompanyPage.pug');
