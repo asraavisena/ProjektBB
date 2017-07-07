@@ -1,23 +1,24 @@
 {
-  "name": "businessbook",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "(git://github.com/inaschnauss/businessbook.git)"
-  },
-  "author": "ina shofa asra",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.15.2",
-    "jquery": "^3.2.1",
-    "material-components-web": "^0.12.1",
-    "material-design-icons": "^3.0.1",
-    "materialize-css": "^0.98.2",
-    "pug": "^2.0.0-rc.1"
-  }
+    "name": "businessbook",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "(git://github.com/inaschnauss/businessbook.git)"
+    },
+    "author": "ina shofa asra",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.15.2",
+        "jquery": "^3.2.1",
+        "material-components-web": "^0.12.1",
+        "material-design-icons": "^3.0.1",
+        "materialize-css": "^0.98.2",
+        "pug": "^2.0.0-rc.1"
+    }
 }
